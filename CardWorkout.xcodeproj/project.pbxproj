@@ -13,6 +13,7 @@
 		83F66CC1291B8D7200E94109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F66CC0291B8D7200E94109 /* Assets.xcassets */; };
 		83F66CC4291B8D7200E94109 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F66CC2291B8D7200E94109 /* LaunchScreen.storyboard */; };
 		83F66CCC291B8EA400E94109 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F66CCB291B8EA400E94109 /* CardSelectionVC.swift */; };
+		83F8BCAF291DB46A00D27087 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F8BCAE291DB46A00D27087 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		83F66CC3291B8D7200E94109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F66CC5291B8D7200E94109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F66CCB291B8EA400E94109 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		83F8BCAE291DB46A00D27087 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				83F66CB7291B8D7100E94109 /* AppDelegate.swift */,
 				83F66CB9291B8D7100E94109 /* SceneDelegate.swift */,
 				83F66CCB291B8EA400E94109 /* CardSelectionVC.swift */,
+				83F8BCAE291DB46A00D27087 /* Deck.swift */,
 				83F66CBD291B8D7100E94109 /* Main.storyboard */,
 				83F66CC0291B8D7200E94109 /* Assets.xcassets */,
 				83F66CC2291B8D7200E94109 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F8BCAF291DB46A00D27087 /* Deck.swift in Sources */,
 				83F66CB8291B8D7100E94109 /* AppDelegate.swift in Sources */,
 				83F66CBA291B8D7100E94109 /* SceneDelegate.swift in Sources */,
 				83F66CCC291B8EA400E94109 /* CardSelectionVC.swift in Sources */,
