@@ -61,6 +61,10 @@
                                 <state key="normal" title="Rules">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJp-lV-coI"/>
+                                    <segue destination="o4W-1X-hKu" kind="presentation" id="zbE-C4-hW9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,10 +80,65 @@
                             <constraint firstItem="6tx-pW-Rqv" firstAttribute="top" secondItem="qoC-v6-CmM" secondAttribute="bottom" constant="50" id="xo8-Yg-2DY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="qoC-v6-CmM" id="Lj2-IW-hqh"/>
+                        <outletCollection property="buttons" destination="6tx-pW-Rqv" collectionClass="NSMutableArray" id="H90-88-sBq"/>
+                        <outletCollection property="buttons" destination="n3g-KS-GnM" collectionClass="NSMutableArray" id="0hO-Zp-WZm"/>
+                        <outletCollection property="buttons" destination="n3g-KS-GnM" collectionClass="NSMutableArray" id="Cqm-FB-UoO"/>
+                        <outletCollection property="buttons" destination="vId-7W-W72" collectionClass="NSMutableArray" id="8K2-h4-EHr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ix5-Sb-2Kl">
+            <objects>
+                <viewController id="o4W-1X-hKu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ja-ds-uhi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7X-xY-1eP">
+                                <rect key="frame" x="30" y="129" width="333" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The value of each card represents the number of exercise you do.  J = 11, Q = 12, K = 13, A = 14" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG1-dd-6ER">
+                                <rect key="frame" x="30" y="229" width="333" height="86"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♠️ = Push-ups  ❤️ = Sit-ups  ♣️ = Burpees  ♦️ = Jumping Jacks" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVD-8n-PkM">
+                                <rect key="frame" x="96.666666666666686" y="390" width="200" height="175.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="FAt-jW-scG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N8Y-H2-n9F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LVD-8n-PkM" firstAttribute="centerX" secondItem="2ja-ds-uhi" secondAttribute="centerX" id="6EF-pz-bvD"/>
+                            <constraint firstItem="bG1-dd-6ER" firstAttribute="top" secondItem="P7X-xY-1eP" secondAttribute="bottom" constant="52" id="BJD-n4-nyM"/>
+                            <constraint firstItem="LVD-8n-PkM" firstAttribute="top" secondItem="bG1-dd-6ER" secondAttribute="bottom" constant="75" id="EeA-MB-bnV"/>
+                            <constraint firstItem="P7X-xY-1eP" firstAttribute="top" secondItem="N8Y-H2-n9F" secondAttribute="top" constant="70" id="HH8-e5-OmU"/>
+                            <constraint firstItem="bG1-dd-6ER" firstAttribute="leading" secondItem="N8Y-H2-n9F" secondAttribute="leading" constant="30" id="Rf2-qY-UEH"/>
+                            <constraint firstItem="N8Y-H2-n9F" firstAttribute="trailing" secondItem="P7X-xY-1eP" secondAttribute="trailing" constant="30" id="bW6-ll-ifw"/>
+                            <constraint firstItem="N8Y-H2-n9F" firstAttribute="trailing" secondItem="bG1-dd-6ER" secondAttribute="trailing" constant="30" id="wt5-Dy-XUd"/>
+                            <constraint firstItem="P7X-xY-1eP" firstAttribute="leading" secondItem="N8Y-H2-n9F" secondAttribute="leading" constant="30" id="zjo-6c-xQi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDL-Lx-Ghz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="-35"/>
         </scene>
     </scenes>
     <resources>

@@ -9,21 +9,33 @@ import UIKit
 
 class CardSelectionVC: UIViewController {
 
+    //Creating Outlets (When you want to access the properties of that object.)
+    
+    //IBoutlet will give us access to the object in our code not just in our storyboard
+    @IBOutlet var cardImageView: UIImageView!
+    //Grabbing all buttons in storyboard that way we can customize them in one go
+    @IBOutlet var buttons: [UIButton]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Running this loop for create a rounded couner for all buttons tied to (@IBOutlet var buttons: [UIButton]!)
+        for button in buttons {
+            button.layer.cornerRadius = 8
+        }
+        
+    }
 
-        // Do any additional setup after loading the view.
+    //Creating Actions (When you want something to be done.)
+    
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func restartButtonTapped(_ sender: UIButton) {
     }
-    */
 
+    @IBAction func rulesButtonTapped(_ sender: UIButton) {
+    }
+    
 }
