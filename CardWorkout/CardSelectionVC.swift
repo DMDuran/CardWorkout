@@ -16,6 +16,8 @@ class CardSelectionVC: UIViewController {
     //Grabbing all buttons in storyboard that way we can customize them in one go
     @IBOutlet var buttons: [UIButton]!
     
+    //Going to force unwrap this timer becuase we are not going to be relying on any other data for this timer
+    var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,10 @@ class CardSelectionVC: UIViewController {
         
     }
 
+    func startTime() {
+        
+    }
+    
     //Creating Actions (When you want something to be done.)
     
     @IBAction func stopButtonTapped(_ sender: UIButton) {
